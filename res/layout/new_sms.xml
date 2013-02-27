@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#708090"
+     >
+
+   
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/description"
+        style="@style/AppBaseTheme"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/edit_number"
+        android:src="@drawable/ic_telephone" />
+
+  <EditText
+      android:id="@+id/edit_mess"
+      android:layout_width="300dp"
+      android:layout_height="320dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_margin="5dp"
+      android:background="#E6E6FA"
+      android:ems="10"
+      android:inputType="text|textMultiLine|textShortMessage|textLongMessage"
+      android:paddingLeft="5dp"
+      android:textSize="15sp" />
+  
+ <EditText
+        android:id="@+id/edit_number"        
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_mess"
+        android:layout_toLeftOf="@+id/button_contact"
+        android:layout_toRightOf="@+id/imageView1"
+        android:autoLink="phone"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="number|phone"
+        android:maxLength="20"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:textSize="20sp" />
+
+ <ImageButton
+     android:id="@+id/button_contact"
+     android:layout_width="50dp"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/edit_number"
+     android:layout_alignParentRight="true"
+     android:layout_alignTop="@+id/edit_number"
+     android:contentDescription="@string/description"
+     android:src="@android:drawable/ic_input_add" />
+
+ <ImageButton
+     android:id="@+id/button_smile"
+     android:layout_width="50dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/edit_mess"
+     android:layout_marginLeft="5dp"
+     android:contentDescription="@string/description"
+     android:src="@drawable/ic_smile" />
+
+ <Button
+     android:id="@+id/button_send"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:layout_marginLeft="5dp"
+     android:text="@string/button_send" />
+
+</RelativeLayout>

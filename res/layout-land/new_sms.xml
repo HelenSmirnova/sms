@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#708090"
+    android:orientation="horizontal" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/button_contact"
+            style="@style/AppBaseTheme"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:src="@drawable/ic_telephone" />
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:autoLink="phone"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="number|phone"
+            android:maxLength="20"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="20"
+            android:contentDescription="@string/description"
+            android:src="@android:drawable/ic_input_add" />
+
+    </TableRow>
+
+   <TableRow   android:layout_width="match_parent"
+               android:layout_height="100dp"    >
+
+    <EditText
+        android:id="@+id/edit_mess"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="#E6E6FA"
+        android:ems="10"
+        android:inputType="text|textMultiLine|textShortMessage|textLongMessage"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+       android:textSize="15sp" >
+
+   <requestFocus />
+    </EditText>
+   </TableRow>
+   
+<TableRow
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:layout_gravity="bottom" >
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:text="@string/button_send" />
+
+    <ImageButton
+        android:id="@+id/button_smile"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="1dp"
+        android:contentDescription="@string/description"
+        android:layout_weight="1"
+        android:src="@drawable/ic_smile" />
+
+</TableRow>
+    
+</TableLayout>
